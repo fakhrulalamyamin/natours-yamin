@@ -4,14 +4,11 @@
   "description": "landing page for naour\u001b[2~\u001btours a tour agency",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Yamin",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.13.1"
-  },
-  "dependencies": {
-    "jquery": "^3.4.1"
   }
 }
