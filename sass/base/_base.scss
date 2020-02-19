@@ -7,15 +7,11 @@
 }
 
 html {
+    // this is define 1rem
     font-size: 62.5%;
     
 }
 
 body {
-    font-family: "lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: $color-gray-dark;
-    padding: 3rem;
     box-sizing: border-box;
 }
