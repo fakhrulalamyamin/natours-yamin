@@ -1,7 +1,7 @@
 {
   "name": "natours",
   "version": "1.0.0",
-  "description": "landing page for naour\u001b[2~\u001btours a tour agency",
+  "description": "landing page for natours a tour agency",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
