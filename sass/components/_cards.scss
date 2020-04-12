@@ -1,4 +1,5 @@
 .card {
+    // Functionalities
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
@@ -11,6 +12,7 @@
         top: 0;
         right: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
@@ -45,6 +47,7 @@
         transform: rotateY(0);
     }
 
+    // This is front part
     &__image {
         background-size: cover;
         height: 23rem;
@@ -53,15 +56,15 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--p1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) , url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
         }
 
         &--p2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark) , url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
         }
 
         &--p3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark) , url(../img/nat-7.jpg);
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
         }
     }
 
@@ -115,6 +118,7 @@
         }
     }
 
+    // This is back part
     &__cta {
         position: absolute;
         top: 50%;
@@ -125,7 +129,6 @@
     }
 
     &__price-box {
-        text-align: center;
         color: $color-white;
         margin-bottom: 8rem;
     }
